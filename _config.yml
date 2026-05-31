@@ -11,7 +11,7 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-url: https://hexo-blog-9ry.pages.dev
+url: https://blog.fx123.cc
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
