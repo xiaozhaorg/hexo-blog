@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 # URL
 url: https://blog.fx123.cc
 root: /
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true
@@ -77,6 +77,16 @@ pagination_dir: page
 
 # Extensions
 theme: anzhiyu
+
+# abbrlink config
+abbrlink:
+  alg: crc32      # crc16/crc32, 短链接算法
+  rep: hex        # hex/dec, 输出格式（hex=16进制, dec=10进制）
+  drafts: false   # 是否为草稿生成abbrlink
+  auto_category: false
+  auto_title: false
+  auto_date: false
+  auto_tags: false
 
 # Deployment
 deploy:

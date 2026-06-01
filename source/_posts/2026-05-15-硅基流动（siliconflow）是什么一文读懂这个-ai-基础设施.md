@@ -1,6 +1,5 @@
 ---
 title: 硅基流动（SiliconFlow）是什么？一文读懂这个 AI 基础设施新星
-date: 2026-05-15T11:08:41
 tags:
   - AI
   - API
@@ -9,6 +8,8 @@ tags:
   - 硅基流动
 categories:
   - 资源分享
+abbrlink: f0e988bf
+date: 2026-05-15 11:08:41
 ---
 
 # 硅基流动（SiliconFlow）是什么？一文读懂这个 AI 基础设施新星
