@@ -2,11 +2,11 @@
 ## Docs: https://hexo.io/docs/configuration
 
 # Site
-title: My Blog
+title: 小吒博客
 subtitle: ''
-description: 'A blog powered by Hexo'
+description: '小吒的个人博客'
 keywords:
-author: Your Name
+author: 小吒
 language: zh-CN
 timezone: 'Asia/Shanghai'
 

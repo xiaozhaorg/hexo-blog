@@ -1,41 +1,42 @@
 menu:
-  # 文章:
-  #   隧道: /archives/ || anzhiyu-icon-box-archive
-  #   分类: /categories/ || anzhiyu-icon-shapes
-  #   标签: /tags/ || anzhiyu-icon-tags
+  文章:
+    隧道: /archives/ || anzhiyu-icon-box-archive
+    分类: /categories/ || anzhiyu-icon-shapes
+    标签: /tags/ || anzhiyu-icon-tags
 
-  # 友链:
-  #   友人帐: /link/ || anzhiyu-icon-link
-  #   朋友圈: /fcircle/ || anzhiyu-icon-artstation
-  #   留言板: /comments/ || anzhiyu-icon-envelope
+  友链:
+    友人帐: /link/ || anzhiyu-icon-link
+    留言板: /comments/ || anzhiyu-icon-envelope
 
-  # 我的:
-  #   音乐馆: /music/ || anzhiyu-icon-music
-  #   追番页: /bangumis/ || anzhiyu-icon-bilibili
-  #   相册集: /album/ || anzhiyu-icon-images
-  #   小空调: /air-conditioner/ || anzhiyu-icon-fan
-
-  # 关于:
-  #   关于本人: /about/ || anzhiyu-icon-paper-plane
-  #   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
-  #   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  关于:
+    关于本人: /about/ || anzhiyu-icon-paper-plane
+    随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
 nav:
-  enable: false
+  enable: true
   travelling: false
-  clock: false
+  clock: true
   menu:
-    - title: 网页
+    - title: 导航
       item:
-        - name: 博客
-          link: https://hexo.anheyu.com/
-          icon: /img/favicon.ico
-    - title: 项目
+        - name: 归档
+          link: /archives/
+          icon: anzhiyu-icon-box-archive
+        - name: 分类
+          link: /categories/
+          icon: anzhiyu-icon-shapes
+        - name: 标签
+          link: /tags/
+          icon: anzhiyu-icon-tags
+    - title: 关于
       item:
-        - name: 安知鱼图床
-          link: https://image.anheyu.com/
-          icon: https://image.anheyu.com/favicon.ico
+        - name: 留言板
+          link: /comments/
+          icon: anzhiyu-icon-envelope
+        - name: 关于我
+          link: /about/
+          icon: anzhiyu-icon-paper-plane
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -66,23 +67,20 @@ copy:
 # formal:
 #   name: link || icon
 social:
-  # Github: https://github.com/anzhiyu-c || anzhiyu-icon-github
-  # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
+  Github: https://github.com/xiaozhaorg || anzhiyu-icon-github
+  # BiliBili: https://space.bilibili.com/ || anzhiyu-icon-bilibili
+  # 邮箱: mailto:svip12200@gmail.com || anzhiyu-icon-envelope
 
 # 作者卡片 状态
 author_status:
-  enable: false
+  enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
   statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
   skills:
-    # - 🤖️ 数码科技爱好者
-    # - 🔍 分享与热心帮助
-    # - 🏠 智能家居小能手
-    # - 🔨 设计开发一条龙
-    # - 🤝 专修交互与设计
-    # - 🏃 脚踏实地行动派
-    # - 🧱 团队小组发动机
-    # - 💢 壮汉人狠话不多
+    - 🔍 分享与热心帮助
+    - 🤖️ 数码科技爱好者
+    - 🏃 脚踏实地行动派
+    - 📝 记录生活与思考
 
 # search (搜索)
 # --------------------------------------
@@ -140,7 +138,7 @@ favicon: /favicon.ico
 # Avatar (头像)
 avatar:
   img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
-  effect: false
+  effect: true
 
 # Disable all banner image
 disable_top_img: false
@@ -231,23 +229,23 @@ toc:
 post_copyright:
   enable: true
   decode: false
-  author_href:
-  location: 长沙
+  author_href: /
+  location: 中国
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
-  avatarSinks: false # hover时头像下沉
+  avatarSinks: false
   copyright_author_img_back:
   copyright_author_img_front:
-  copyright_author_link: /
+  copyright_author_link: /about/
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   QR_code:
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+    - img:
       link:
       text: 微信
-    - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+    - img:
       link:
       text: 支付宝
 
@@ -425,64 +423,42 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2020
+    since: 2026
   custom_text:
   runtime:
-    enable: false
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    enable: true
+    launch_time: 06/01/2026 00:00:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
-    work_description: 距离月入25k也就还差一个大佬带我~
+    work_description: 摸鱼中~
     offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
-    offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
+    offduty_description: 休息时间~
   # 徽标部分配置项 https://shields.io/
-  # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
-    enable: false
+    enable: true
     list:
-      - link: https://hexo.io/ #徽标指向网站链接
-        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
-        message: 博客框架为Hexo_v5.4.0 #徽标提示语
-      - link: https://hexo.anheyu.com/
+      - link: https://hexo.io/
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg
+        message: 博客框架为Hexo
+      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
         shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
         message: 本站使用AnZhiYu主题
-      # - link: https://www.dogecloud.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
-      #   message: 本站使用多吉云为静态资源提供CDN加速
-      # - link: https://github.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      #   message: 本站项目由Github托管
-      # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
-      #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+      - link: https://github.com/xiaozhaorg
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+        message: 本站项目由Github托管
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
-      # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
-      # - title: 微博
-      #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
-      # - title: facebook
-      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
-      # - title: RSS
-      #   link: atom.xml
-      #   icon: anzhiyu-icon-rss
+      - title: email
+        link: mailto:svip12200@gmail.com
+        icon: anzhiyu-icon-envelope
+      - title: RSS
+        link: /atom.xml
+        icon: anzhiyu-icon-rss
     right:
-      # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
-      # - title: Bilibili
-      #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
-      # - title: 抖音
-      #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
-      # - title: CC
-      #   link: /copyright
-      #   icon: anzhiyu-icon-copyright-line
+      - title: Github
+        link: https://github.com/xiaozhaorg
+        icon: anzhiyu-icon-github
   list:
     enable: false
     randomFriends: 3
@@ -521,37 +497,26 @@ footer:
       #       link: /copyright/
   footerBar:
     enable: true
-    authorLink: /
+    authorLink: /about/
     cc:
       enable: false
       link: /copyright
     linkList:
-      - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
-        text: 主题
-      # - link: https://image.anheyu.com
-      #   text: 图床
-      # - link: https://beian.miit.gov.cn/
-      #   text: 湘ICP备-xxxxxxx号
+      - link: https://github.com/xiaozhaorg/hexo-blog
+        text: 源码
+      - link: https://hexo.io/
+        text: Hexo
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
-      # Effect Speed Options (打字效果速度参数)
-      startDelay: 300 # time before typing starts in milliseconds
-      typeSpeed: 150 # type speed in milliseconds
-      backSpeed: 50 # backspacing speed in milliseconds
-      # loop (循环打字)
+      startDelay: 300
+      typeSpeed: 150
+      backSpeed: 50
       loop: true
-      # source 调用第三方服务
-      # source: false 关闭调用
-      # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
-      # source: 2  调用一句网（简体） http://yijuzhan.com/
-      # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
-      # subtitle 会先显示 source , 再显示 sub 的内容
       source: 1
-      # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
-        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+        - 欢迎来到小吒博客~
 
 # Analysis
 # --------------------------------------
@@ -806,12 +771,12 @@ aside:
     category: true
   card_author:
     enable: true
-    description: # <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
-    name_link: /
+    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">欢迎来到<b style="color:#fff">小吒博客</b>，这里记录了我的<b style="color:#fff">学习笔记</b>和<b style="color:#fff">生活感悟</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">希望你能在这里找到对你有用的<b style="color:#fff">内容</b>。</div>
+    name_link: /about/
 
   card_announcement:
-    enable: false
-    content: 欢迎来看我的博客鸭~
+    enable: true
+    content: 欢迎来到小吒博客~ 🎉
   card_weixin:
     enable: true
     face: https://bu.dusays.com/2023/01/13/63c02edf44033.png
@@ -822,7 +787,7 @@ aside:
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
-    enable: false
+    enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
@@ -858,7 +823,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2021 00:00:00
+  publish_date: 6/1/2026 00:00:00
 
 # Console - Newest Comments
 newest_comments:
@@ -1048,25 +1013,25 @@ css_prefix: true
 home_top:
   enable: true # 开关
   timemode: date #date/updated
-  title: 生活明朗
-  subTitle: 万物可爱。
-  siteText: anheyu.com
+  title: 小吒博客
+  subTitle: 记录学习与生活。
+  siteText: blog.fx123.cc
   category:
-    - name: 前端
-      path: /categories/前端开发/
+    - name: 技术
+      path: /categories/技术/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
-      path: /categories/大学生涯/
-      shadow: var(--anzhiyu-shadow-red)
-      class: red
-      icon: anzhiyu-icon-fire
     - name: 生活
-      path: /categories/生活日常/
+      path: /categories/生活/
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: anzhiyu-icon-book
+    - name: 随笔
+      path: /categories/随笔/
+      shadow: var(--anzhiyu-shadow-red)
+      class: red
+      icon: anzhiyu-icon-fire
   default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper:
     enable: false
